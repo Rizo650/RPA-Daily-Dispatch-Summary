@@ -1,0 +1,332 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WhatsApp_Open" this:WhatsApp_Open.in_ApplicationPath="5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App" this:WhatsApp_Open.in_Message="Testing - Please Ignore" this:WhatsApp_Open.in_Destination="FREDRIK-IT-GRP" this:WhatsApp_Open.in_NeedtoCopas="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ApplicationPath" Type="InArgument(x:String)" />
+    <x:Property Name="in_Message" Type="InArgument(x:String)" />
+    <x:Property Name="in_Destination" Type="InArgument(x:String)" />
+    <x:Property Name="in_NeedtoCopas" Type="InArgument(x:Boolean)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>726,3502</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WhatsApp_Open_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WhatsApp_OpenAndSendMsg" sap:VirtualizedContainerService.HintSize="736,3437" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="674,61" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,223" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_Message]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: WhatsApp" sap:VirtualizedContainerService.HintSize="674,3214" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="8fb83472-934b-485b-8be3-95f016cde8ea" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,2914" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Chats'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="578,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Text="[in_Destination]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="81, 108, 332, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Search'" FullSelectorArgument="&lt;uia automationid='SearchQueryTextBox' cls='TextBox' name='Search or start a new chat' /&gt;" FuzzySelectorArgument="&lt;uia automationid='SearchQueryTextBox' cls='TextBox' name='Search or start a new chat' role='edit' /&gt;" Guid="f16a156c-45c8-4292-960b-80fcd31b6704" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVAAAAAkCAYAAADfLGK6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAULSURBVHhe7Z09TitLEIXfUoDEljCGjIgVkAFCQoTkJMSQEZGQkBCQkJIRsAAWwJLm3s/S4R03PWN7bH7e4wSfPN1VXV3d03VuG4TuP2tra00IIYTFiYCGEEJPPgjocDhsRqNRs7OzE0II4S9o4mAwmNJKmBJQnMbjcbO1tRVCCMFAGzc3N+sCys0z4hlCCO2gkX4TfRfQmnMIIYRp/Bb6LqB8z685hxBC+Jft7e0IaAgh9AGtjICGEEIPIqAhhNCTCGgIIfQkAhpCCD2JgIYQfiVnZ2cT9vb2qvZ5WJmAvr6+Nm9vb+8cHR1V/T6Lp6en5uHhoWoLPwfOBeejZgvhKzg/P2/u7++bm5ub5vr6evLMZ813FisRUMSTZNS+uLiYan8FP0lAV5HLd/wj9BUsK6AvLy9ffrbC/wdunHd3dx9unQhoHxFdWkB/yo0iAvrfIAIavhNum21f2btsbazkBkpBdB1qbPgIFwbEps1GW2MpHPX7jwvUL9GiLdusQnNf8LlVqLL5OFHmTl/5owxu4/SXcykGdsaQO/3Pz89Tftjk6zDO/boEW2vx3JSXcBvrok9j5CPx87HYy1jC90/jPIb6yzW27ZX3gb+vEOYBkaz1AzdQbqg1WxsrEVAVRe1Qq1DUXxalihUkgGozztvqc7HQs8RMxazilV8JcX3u0l9FrHZJuQ7PibjeZu2lXXNrf9wO9HUJhOeu/W/z11pkZy7PvdwLbKyPZx+nPVKu5F6Kn8AHX7XxBeXq75UYiond98L3Chin3EJYFD9bJZyrbxFQoQLz4uC5TJqCqRV7WZDEok9t4ntspyw0YHzbPF7cwouzlrfTFgPIY9aL0jra4rTl3gb75nvllGuRiPFcm5/8tJd8+p547sQs91y05aO5fW1dcXw+UA7uE8K83N7eNicnJx/6+eredTttY6UCKvxGwYGnYEpUXBRDaVMcnuctNPpdJIDxtSKmz4VaeIx5CtVz93lqudCWL2j+tlzwmSWgHg/a8i3X4iLG/GUckGgxTs/KEzuf9Nf2F/Cp5a+5vY+90RxqKw/w/SnXEsIi8Bt4zpeLKOLJL5awue88fIqAkqCEruvA4+fFoWJWm2cvwrLQnEUF1OcRnusiheqCRLvMhbbnTdxlBFTz+dqI0ZZvuRbPt21+IV/G653y2baHosxPKJ73+Xvt2itY5L2E4CCaj4+PE6HkJsq549YJi351F0sLKEVSChcHXn0c9rZCo1hUlGq7L88UnNpezOrTPIwt88C3VsRAjj53meesQsXmuflc5bqI5bnRligwpiZgXbnT77mq3ZZvuRbto/L391VD+SofYpX7V4LN18VY0Nzuy9zMwXPXXtXsIcyDxLP29X0ZVnIDpSCc8oDTdruKpRxL0fHpNhcpUAEKzcXYcl7sKvoaFKbHchs5zhJQH+tze44uGsLFBbsLhNCe1WygvQKJTF8BBcUSvm/KRW2N79of8Bw1XmPdj/g6E117BeQlm+cfQhv7+/ufIp6wEgENIYSfCj/jRERrtmWJgIYQQk8ioCGE0JMIaAgh9CQCGkIIPYmAhhBCTyKgIYTQk+p/a1xzDCGEMM1oNPoooMPhsBmPx9UBIYQQtiYaORgMPgro+vp6c3x83BwcHDS7u7vVwSGE8BtBE9HGw8PDd/GcElDY2NhoTk9Pm6urq/c/uA8hhN/O5eXl5M9CXS9hSkBDCCHMTwQ0hBB6sdb8AWtVOGRytJjyAAAAAElFTkSuQmCC" InformativeScreenshot="82eeefaf4f79a683755e13086968f7b0.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="81, 64, 192, 28" ElementType="Text" FriendlyName="'Chats'" FullSelectorArgument="&lt;uia automationid='TitleTextBlock' cls='TextBlock' name='Chats' /&gt;" FuzzySelectorArgument="&lt;uia automationid='TitleTextBlock' cls='TextBlock' name='Chats' role='text' check:fulltext='Chats' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMQAAAAgCAYAAABNc9f/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ1SURBVHhe7Zq7kSIxFEU3FPIgDrIgCGIgAyIgAFxsXExMPExcbR2WO3VbqD98xtiZe6tOQbU0oo130FMzf2azWQkh/CNChGBEiBCMCBGCESFCMCJECMbbQiir1ao5HsL/RK8Qi8WiHA6Hcj6f7yVfyvV6LafTqVP8SoQIP4GmELvd7l7m7TCuucqnhVgulzchL5dLczyE7+BBiP1+fy/xctsdNptNmc/ntzGKFBm22+3XfOXTQriUrfEQvoOOEBS1wrezj/WhRIjwE+gIcTwebwVIm6JdYQwFIdg5+FvCq7dWwJrM4RyicC5BPv+8vkg65qqdUliTc4/WCOEVOkJQnIS2ya8PoUgmClPrEFouzdUORCEzz8Xgvebxvi52oGVDBpdOY+TTu1T4fXSEUNbrdWfSEAoSULBc86KlWDWXcRcE2DEU3yX6WiZJRXw+u0N2iPAuTSGe+aZV/KANKmgXogVFrfjnThGiliuEd2kKUff+Qyi1REMFzZi3OsoUIUDtGWEnYq7vFiG8SkcI/QjHq18fQpkiBAdhBRkobJ83VQhgd3AxvGUL4VU6Qng/X7dAfShjQtDfK164z7ZMNawrkRGkNSeEqXSEAP9XDQrMi5RCplBdFmVMCMYVP/z6ruFrcLBXvB3ien141o+JY+eVEMZ4EILicylaodg1XxkTgnX1OJZXilePTZVaPkXzGde63CPX/F6feToWQosHIQQ9uhcrofj4RvdvaGVMCKDIVcAUuX6QU+o1uAc9vtUZgTl+X1yvd7IQXqVXiBB+IxEiBCNChGBEiBCMCBGCESFCMCJECEaECMGIECEYESIEI0KE8MWs/AUY7XYt9SAnngAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Destination Msg'" sap:VirtualizedContainerService.HintSize="578,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="143, 170, 86, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'GRP App Dev'" FullSelectorArgument="[string.Format(&quot;&lt;uia automationid='ChatList' cls='ListView' name='Chats' /&gt;&lt;uia cls='ListViewHeaderItem' /&gt;&lt;uia automationid='Title' cls='TextBlock' name='{0}' /&gt;&quot;, in_Destination)]" FuzzySelectorArgument="[string.Format(&quot;&lt;uia automationid='ChatList' cls='ListView' name='Chats' /&gt;&lt;uia cls='ListViewHeaderItem' /&gt;&lt;uia automationid='Title' cls='TextBlock' name='{0}' role='text' check:fulltext='{0}' /&gt;&quot;, in_Destination)]" Guid="4d4c0dee-3b96-4e7d-97a2-570d637697c4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAYCAYAAAB6OOplAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALuSURBVGhD7ZY9a1RBFIb9J9a21tbWNmnETivBxko7sbHS0sIiZQgIooWgBgQLxUIWLLSxs90fccMTeC7vPZldDWxGA1O83Dkfcz7emTO7l9br9TRw/hhEd8IguhMG0Z0wiO6EU0Svfv+c7n16Nl19dXu6fLh3AtaPv+7PPurFtTd3p6ffDmb7i++vF/YrL29NN48encTWZxPMm/nOE1knoJc7H5/8Va1nwYLo97++zI1CDIQD1g8+P5/9tEMohFAcOvZjl2j2sKZw5Otv788xWnAffjfePWz67Brmy17RcTnsZxdYEE1CEhz++LBwqqAQilKWIHXKfPWRbOUWaJJD4/DwXe34VrVQewH0j36Xhz0TbfCatIXqx7OBznFvEY0/OuUWOGSmgJuEb04RQOftwxeZA9SODR31OJnoth0YPq2eIRmbMvw4ueR2j5dTP4Af+VM3E01TBElyNgG/fDoISnDtlWi+FJM+Fd5ixxXf6m+T5nbMs2lkvtjtCTnjJHJ/Ah02DomayAv5GZeardtevSQ15ky0gd0AkBOb9PXWEKP6cBjbniSaSGJtJt9J5Eo+cSVSorMWD0O5Ats2oln77GVc86LD5mS16gYz0ZLj+KsDNGdSwNribKT1r4OkxtDWgreghXwakOvtRK5Epz0JawFbi2h6dvyNW2FeONCXfa23ffFjiDPIkwO1AdZZHMEZLfdJ9J8IFjmKHgzIZkE2J8irrtYJ6ltbga0S7XOg3hvNZcr6nFB/o/Kb8cCCaDZSOCA4ifgiE0C/LAKQFB0nmzJffbahEio8AAtnbW5iS6JTKNG+pfghW1cL2NmHL3BCc4/9GNfYfPXxksKVusSCaADZBJRcvsj5pKAnUe6zQAtxnT4tkA/ffCKET4pNs4YUbxi1ZR0STa3Wz95VmdAEPgliZK+Cw4ZI/eAk32FravUBThH9P0MiWjYg0S3bv8YguhMG0Z1woYi+yBhEd8IguhMG0Z0wiO6EQXQXrKdjzXWMUrn+r/QAAAAASUVORK5CYII=" InformativeScreenshot="09566469adea98102a151ea0edb5b009.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <If Condition="[in_NeedtoCopas]" sap:VirtualizedContainerService.HintSize="578,1938" sap2010:WorkflowViewState.IdRef="If_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="400,994" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,310" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="338,188" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Type'" sap:VirtualizedContainerService.HintSize="338,208" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="558, 683, 748, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Type'" FullSelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to*' /&gt;" FuzzySelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to*' role='edit' /&gt;" Guid="e0a06b2f-31c0-4970-bddb-a0d7847f32ce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvAAAAAsCAYAAAADxYwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVHhe7drRbeQ2FAVQ9w+4BJfgDlyBK3ABLsAdTHAT3+CBkbzZjRWAO+cAxIzIR4rS15WghxsAALANAR4AADYiwAMAwEYEeAAA2IgADwAAGxHgAQBgIwI8AABsRIAHAICNCPAAALARAR4AADYiwAMAwEYEeAAA2MgvB/iHB9kfAAD+bwI8AABsRIAHAICNCPAAALCR/xTgHx8fD9vHx8dnFQAA8J2+5Q3809PT7f39/fMIAAC4igAPAAAb+fYAn89njj6jSV9qXl9fby8vL3/+9pOb5+fnz6q/pK5jnXcma83as893skb2+fb29ndt/s9zrfvotcz6mvtP63nP+ud50+ZakXN3LGusD0XzOjMGAMB9uuQNfAN6Jaw2HDfgzvHMz5xoaO56DdhnOi+y5hrCq+u0voF61ud4But53H3ld91Tar7qj7nPtS5jcx+9R6nr8QztqZ/rAQBwPy4J8Pk/A2fCaYPwUcie9UfhNPVz/TPreaejsRmSI+ftg8XRPjPeUJ65Ded11n9k1h3Nmfd03Wdqz64TAIDf2yUBPtrXUFsJxmtAT10DacZSv7Y+AKzSv9Yemeeo1M59rwF+XTet45nXvrm3s/7eh9lSu96fmvd0ndcGAMD9uSzAN6ivgX09jgTdvu2eIfpHUjdDecPzkYz9bIBf93lmXafa333Nt+wdOwvwc811LgAA9+uyAJ/Amf7185cE4xlOI8d9W53+fxtYE7BnyM7/zD2SdX8mwDdYz/FK3+zPutn/WX/aPHeO59q5R0fX0fEcr5/zAABwny4L8JHQuQbPvtlOf0JqWkNzNeC2rcF7mnUNvkeyv3Wd1M59Z/7cS8bm+l177c+8r/pjXm/3Oc/dsbQG/jk+56et9wwAgPvwLQH+TEJnwujUAM/XEtJ9NgMAwOqyAN+30SsB/sfy4JMGAACrXw7wX+lnHkdvkAX4f1o/jxHeAQA4c0mABwAAriHAAwDARgR4AADYiAAPAAAbEeABAGAjAjwAAGxEgAcAgI0I8AAAsBEBHgAANiLAAwDARgR4AADYiAAPAAAbEeABAGAjAjwAAGxEgAcAgG3cbn8As7eXQjDpIIYAAAAASUVORK5CYII=" InformativeScreenshot="f5babd620a5316e210bc85be9e0fe4ad.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+                    </uix:NKeyboardShortcuts.Target>
+                  </uix:NKeyboardShortcuts>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="338,69" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[in_Message]" />
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Caption (optional)'" sap:VirtualizedContainerService.HintSize="338,208" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="495, 583, 448, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Caption (optional)'" FullSelectorArgument="&lt;uia automationid='CaptionEditBox' cls='RichEditBox' name='Caption*' /&gt;" FuzzySelectorArgument="&lt;uia automationid='CaptionEditBox' cls='RichEditBox' name='Caption*' role='edit' /&gt;" Guid="f638a828-4562-4a78-95ae-c29d0bce0388" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAcQAAAApCAYAAACr8ln3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAADYNSURBVHhe7d3Jtmzddt11PQGyEuB1LVlUsWVRBUtACSMLamBZUMGWLQqA5aQ1sGVjSTf50nv9Ah/xXyt+sfuZN84RFWoUehv5mHOt2DH6nitin/NL337z0x+++/arH5I/++7rSw/p+b75+ievOPnz7795+eWp29j6tz6oWztUW4+vv/rxJ3Vif1UP8fT60PXNlpOPDefek6tbU366PmdeOtn1tH66NVbXd3HmnvGFHPefj+0e6JPcPH0W9i6+ezz7ieVzn4P6zdP3XZxcPamGb38+2PazeXyuNQnyxNS8k1Du913D62fpU3z/XTX1bq0fX3rgP2P5sz9i6lvrx9dayZf9/VcXyln75fv20ee7xz5+9vWF9Hxfff2jl54EdvK7eoh9/7in3/74h6+++dEP33z3k0snv/vZV7f/+0ftz+689PDdzz9i+b/+/sZX3/3oJcM3P3vs6amzw0+//csfvv35T3/4yTd/8Und1z/78Q8/+fYvfvjq+x/98NPv/vJCPvpl//yR/7NH/Ptb/+bfP/o99Z989xeX/ZPv/+KHn/7sLy/54+/+/GVDPnFy9a9+/qNPatL1OfPSyR99++9++PrfP/b70K1x+atNf+T9uF6D/OLhjC/kfPVYoxo+dv31Ets8fRbVFBPfPZ79xPK1pjz1m6fvuzi5elIN318+7ufmZtvP5r32mCz3IcFrIJZ+EWIwFAw20nAzQNJPbCwdss/hJxesA9bjV1tdvrPv2cPa6pJqtyf9XR/6Sv6wa7DPvmw6m4++2JrThwDWt+RnP+Vlt4/iaoJrkavPXiOfvPWtXsxafJDtdZR75q3vzHUPs9PziSU3N719bI0erkueuB7Q+vIhX2RUvPrWYOtx2+0p36dkyE7ehHb7wtdfPcjpTR2i/dhjP2c3cd6+Z/6DuJLFzt4RG5JDcMklQjmLr7959HrIV+6TECO/5BLjiSXAdMiO5JbYIryL4J44iTEyTPKrjQyRIjKMHMOLGB/kF/EFxJjMjhQvYnwOPsSGsNZHX8kfvjRQ9WDT2XwvfWD4k6sjgPUt+Rn85WVHIMXVBKTyIolnnyUoPnnrW72YtfggGynKPfPWd+a2H3Z6PrHk5qa3j63Rw3VddcUe2NcA+kWl1y38Um/+3uRkbzwD5X5Tvh8k7HKT8tdvEPGll2eQrp+txn42Jr41G9+8dyhun/qcetBn97Cx8K5e/llHR1Cbs6RSn40l9edTbz3x5PreQf/PoZxkPYK96W8f1lDHLweyty5pHX499BG3vlz91WWXq+/mySX1TG5P8Lps3eZFVOGKPXLdlzvWfj6ICdH97Pvyb7sYcgQ2Mty1ssm77x3T76qLuJ5rfrL2kCD9IriHRHpLigjwRYTPvAhxCTD9F+wHCSLDTopJeBHjk9QQW0TX6e/0syNMefwXnuR3nhLh8j0J8HO44g3Kx0A8CY0eDM6T3MTCu3r5Zx3dCXFzllQMeMN9B/oOfPKTgV/f8b2D/p9DOcl6BHvT3z6soY5fDmRvXdI6/HroI259ufqryy5X382TS155xVsj8iw28Lr0mrxOiDs0vAH5DSpDooEhJm+HlPodcH4Lr8fmJYGtPn2HD5++/GR9t7f9nvn2qibZ/uTtvuXw8509Sf3exXfN7SXnc3rStfBtL3tnl7O19rI5m7d7XV1eNYtiZLA+iLdnr/f2UXf2KuesT+ZTTy+HDsXFgK/c9K1LF2stNWL5w+V7XCOfvLtfdr3z3XJJChlubPMX9YsIkSBfaP38+TweveMfPS+SfBJdxLbEhwzF6Av+Sw75Oe399Ou/vPxOjxcxPshPzvn4dAmxkx8yPE9/wE7SkSdCjPycEl9E+JROgYjxx9/++SU7Iea78Bh8EVjDzxA0FPM3NMn8cvj55Mgj9XsX3zX1MrAN9Hd6Ejnw7dB3UmSXs7WIZnM2T/zU5VWzKEYG64N4ew5nH3Vnr3LO+mQ+9fRy6FBcDF6+ch96r0O619RrEVFmXyfE+83Xm+rxQ/t4w7MNBm/K6435HCAfA+GuW2wun3XO9eSeg6a8c63F5q5u/5t3+vjXLgfY2ze4nvTtq06cLg/W71SSn2/7l7u1IZ/Ymd9A5+eTI8865fkFJbxbK5y9Tuh3+rZ+fdbilycmb2Pp1cDWirHl6LP29tHDaxDkBL31SPJt/e27gZwQoBMgEjvJCzpJ3vn3KTREfntC7BErWw+kaI1w9R5Sg05/fYa4nylujC9cp8OHHbEhPqdDZIggkeEJhBhBIrtIMJIj+ZGfkyFfeeHlfxIinIR46U/ycyIMkeD6GooGIz00FIFdzuYZounJzQ3idHmw/tfniQ//OcwN/h3sIZ/YmR958PPJkWed8iIxsXdrhbPXCf1O39avz1r88sTkbSy9GthaMbYcfdbe1yl9X4PgdXmdEM+BYKjQDYKN5WuoyFO/efq+i5OrJ9XwOSnI3eG/eXxJNsgTU/NOQrntxTVuLOTba9y8pFOH+F6XHPr2yR/OvRbfa5G3tcXVqd38jVVz+kK5+7rynXrSupDdde+eztykfYZ853rB/dseJ/Lrxz4lvZxzT/xwxvNFRnR+PgR3kdSTBCMwj0wR1epOjIu7//1zHs74Qr+fPQiuGr7sCC2SQ2zIzwlxyW+BGF81cwpEgk6NYvn6Eo08RIgor8eoQ4DIb+0lQVIN33VKHOL78TePIfh8dLoEificCJOAEBuIkVPD73MSEFiD84yFfMWX5LaXU4c4CcUMeIRguBvoBn+yeD418rYWCYjJlb+xak5fKNfneus79aR1Ifs8FZ65SfsM+c71Qn3Ukify68c+5ZWT/sjxGnid+OGXlmyShtAOjIYEn6HwTt8+9LV32Oi5PdhicuUkN26vDaftc+U8Bmz1q0M+Uo26V/2j5+4jH+QrRt/BLSd9Y6Cm+Jf2IB5R0OXQ1xfa07ne5q6+17bY9ZP1S5e/9fLf1ZFfquPjz9aPLU5XJy+dLWdrxdNBLthT8uzvUWnwc3af1vjq1z0vP9+HRHwILJS7/pW3vv0+9iy+J0O+cJPpwzeEl/45ckyG89un2ekXwc2pEOk5Hb7TEeGSIpJbosuXntyTIVtMbr6L8B4kGHyJJmJMvr5s83wsGgH2jVLkSA8GIHmR0hPsJKIzOPNBvmJ0xLd56RsDNcXDSUZsAz+ioMuhry9EDEgENnf1ctcPu37SY0v5Wy//XR35pTo+/mz92OJ0dfLS2XK2Vtz9Dl4DQJLJ64RogPgt3TDwpl9sLB2yDZb0pFywDliPX211O5z0PXtYW10yu4FlaOWjJ/XZuP4kf9g12FuXzqaz+eiLrTl9SGh93Str2w/yax9LnMG1yNVnr5FP3vpWL7ZEq0ae11Humbe+M9c9zE7PJ5bc3PT2sTV6uC554npA68sHvuLVn2uE/XkpJ9yx+t7kl46Y4PPfKH1c7/MUGZDanXuvad17zQehHL3L1TuivPwPidwQ3QmnRblkj1Rf8edp8MSeFNMh2xdr0pOX/0mGCHHJ73PfKEWKyPKKP0+Cr2+UDkE6ISLA87NE+iWfQ3HJbgdicglrCY69dYZqNp3NR1/wG9yGdxIJrc/ndNnIAPlFAEucYYknqQ9/Np+89a1ebIlWjTynO7ln3vrO3CWv9Hxiyc1Nbx9bo4frkif+6vFEp/hetwVf8euEuENkh0DILm5wbOwcGltf7GNovEc5yXMNdfYlf/s3KJbg5L6rcUJc/+fs7ZPPdZxSLXn6N5YEOWR1YYkim6RD9u4jn35y9CHXD5sfdh11+fr52PjGku/WXT9fcrE5C/Fi2+PE+tPLPe8Jv7ziId3P8uad69H9nPEHuRcZPUkOqSGrJbBspCn/07zbR+9nlh7OXq+eTyIkIzRkiBAR3Tt/J0IECVf8eTpEfJ0S+xMM/nB+iSadfX1+eBDiiYguuSQYSabnR4hXzpP0LuJ7EmNAlE6IESIivE6ED90JMf0dKa2N8JBggzL9lGrJ07+xJMh55T7qwhKF4b6DHrKRwJIGnb1y/bD5YddRl29PiGcs+W7d9fMlF5uzEC+2PU6sP73c857wX/oDvUYh3eeH12tQfnkPXCfE3twGhTegN74h86W42MY/BsZ9kimHLa8ceXok+Tb+ORhWSX2TS5jZsP02/8yxD+CXs9e82Nx6q7fmrnvq7pG1xZLW232dJxnyrE2CejG55P7Sw7/9Nlav9CXzzducpL1an0//jbEXm7dr5H/X43O9+Fae2Hw/S+yNI7f7iy/V3j74ILn25QRYj+pv/a5rvx/E6GSZzHfLu0Yf9atHaPt54JKf2OakR4j8apCbzw89Nl2ivOIP4kOMV/xJjtVcJPkgM98sTUeACA/5XafA52lwCZGO+E4gxevk+CTCpFPiiwifaOh9ibBCOQgO+OUYrCc2dwetNXfdK15dvux6PuVrkD9z8pHFwnlaIs/aJKgXk0vuSZN/+22sXulL5pu3OUl7tT6f/htjLzZv18j/rsf22tdoX4N9LcLrkWnD1Zs8eNMnVzfU+MFASk/uySJ76+W/qyO/VMcXDCr92OJ0dfLS2XL22sTTQS7YU/LsjyTk5df/9AV9Nifsmu/2cMbEs5PtQ09rbLx8tbv29pK/8ez1nder/wl14nQ1u3+2NcR2b+UkF+IbS999Jd/VWkt8iXBh/SWliGqJ8CKohw/yFaPv41Q5954+YqCmXPnv4gjNN0pDRIfsVkJk6LPDF56ktwSY/IQYn+SHABFi8voTjWJPokOCiHFJ73UKHHnWIb7rJPg8Jb6I8Pn4NPLbR6XIMOnkiJwMRwSWD8lt3KAMcqF8dWL6+4KNvPxLonxIocFNN9gNd7ohv/EzJo4IIis9rbFxpJHctbeX/I1nrw8phnz6n1AnTlez+2dbQ2z3Vk5yIb4xr1Oy+5+kL37JG783eMNgBw3/u0FQrHzEx946w0XfzZNL6pncnuDkIr9BtXnZ4cp55CJ4sfM65AZ59HI/RySQ7Zr22uSf+l+VY71d156zy9FDnvr8YfckP8hRC/LS7WNz8p3rBzYZ5G6fz+mLd/589T5fA9fQa5vftcmnb5/gZ2Fj4knX4dryW2vXoG9tJBR5RUhLhOR9+qu2n9VqPnyf4t7TSXQnyk32iDQgTv2d9vYEGPjzpUM2X/EkQgyIDl7EFzk+ToYv4nsgm36dKnts+iQ3BBiyESO5ZNiJUi588/NHz+NE2JdqlhidCHtE2t8gIsP8CNHgMxzfDciIaj9Xyr9kFl6E9oiR6t/pn8tpWDe4EdcSmKG/ZJGUZ+AjgPxy5Ac5akFeun1sTr5z/cAmg9zt8zl98c6fr94nmbsGJ2PXJp++fcL12Df/A+77vg5+FnqNLkLszf3Lv/LrlzQUPn3T3/6PN+3HsBA/UY8lrHwrrbP5csXF0netrcuP3JKRIQKUv1h/Etj1Loe9/s3Nto93cb7NW3vjxdTQ8xv8bDmugX5eU/IkgfVl1y8ZXO/2SY+Q5C/4zjXO13tju5742tZL7jVnQ3n53Be1u055asX98nDqQT5910kWk9PP1f6s3fHyqy/vg8wiqv3SDMIEeR/1937q++H/2OdH3o1sZIgcr3UeZHYSIdKD/MhvbfmX/iA8xIcIlyRf8kF+yHKBLBHaEl4ygtxTIGIEJ8eQvl+ecSp0MnyR5IP4IkME6IS4QExfGo7lsM+hyZcdPhfn27y1XzUP7CCn599HouQSA529PapNvvNl1y8ZEMv2SXfqkwd85xoX8UzOxnY98bWtl9xrzoby8rkvaned8tSKX8T6kMFnh7Cv9UWIBkCEeL/xevP2hvwY4Pl3QCThHILJctXzn4PGGmLvck8/5DOQxJJ8O/it8zHAHvXPobg9goFsfWi9ei5BJN/pwBf0pIsnDWgx1wvspJq1yXPPcouL7drbl66mPHpS/kp5W8v/zra2/PXveiG9vH0d+dlq7Gdj4luz8c17h+L2qc+ph7vPfeJDYojrPAXyQwQZYSLKi9gea2ZDa+SL+O6f1Y9e+pV31T4JMYLbx6WrBydAOlJ0ekSKF6l9/6h5IPIj8yPGyHBPiFfsIX2meMknCTohIr6T8PakKHf9CBAhIkEkiRAjwT0dOhmKNfwMRcQE+RuKSBPK688nPAbNl3ynA1/Qky6ePE96O8gDO2nor00iDJBbXIxUJ05Xg1T45K+Ut7X872xry1//rhfSy1sC52ersZ+NiX9S88Te+3d4fanmV371P3y8sR5vgAf+3u//3R9+62/8xg//yW/95iX/4O/9t5e/N2iDwmBIspOrl+83+Y1bI/zjP/6H1xr/5s/+r1eeWPYOnsBGwg2J/OrWJ/ef/en//sNv/uZfv9Y440moRz69tufG5fD/93/w+z/89m//zUuXH1wPG+Tt9brWrZe3+u/93t/54Z/84394XVOvy7/9N//qiusTVg9n3+Kt9+7+nvl6yfMLAd+7fVdDFt8YXQ/IV65avuCXlHz6bfxL/qBWjL7g/1zt+fMm9865CQ1RpUd0SOuD7Pq5fZ7onr6A5BDg3bec7sfHusn+8H5r0u+cW7/8z5MegiORHR0xIkBx9kmCiDDfnhCvx6JPuXr5F1k+CA2xBSS4RJguTyw7InyR5JP0gkelToqvzxWfj0eRYUj/5JunnR4f+k8vcmw43vhxOQ9fEnHtAF2SXFKLLOXKD/xskCfesF5SMdBfg/wLOiCHsLo8Um7rLTF9Ll8veU6MfO/2jYisszG6HpCvXLV8wS8p7tl5n7/kD+drQ1/wJ18nxF/79f/48ab66UVQDfn8BkJ2ssFznpIMo+T1pn3a6erzpf/RP/gfL3JVC1srpjZsL7a8d3Ljv/O3/9YP//Jf/OnLvr/Ofl/z9lSbL7hOe9fz9373v7hISe7ZxzWIZYdim1cssIMTEZS/JBQh/sk/+UeXP5ltWFtXT+uvpKvRd/WtrWe5bPFdiz/f7tU167G+oFbv7bPrJ/dnTt7uSa569ubTq8s+e6ytlj/9Jqg7nmRHbkgwQiJfJ7dH7BPCeoAPmYkjvju3de4e6TfuvCs3ortij36jL/khRz420stGhggyX4jYwnXSe5Ag6X+/QJTIL7mnw/Srx5AdciMB+ZH5lhzzIb0lRvpLIr0n2PtnF1/3+eIn5NcwvMHXEHUaPIlthyj/Dt3yN5ZtYG9esSsv/xP7CDJEECcJBcQRPKY8CW6JiaSr2b70ra1nuWzxXYs/3+41m3RdfEGt3ttn1+8e7ck8uJf0pHvs/pObE/Y12B7sTwjxv3oM2EjrflPeg4Bu4GTTTxRreNVzc/IV+8O//z9chHgOfmsk9ag+2F/x9M1bP33ln/zJH1+EKLeBUyysDue+wtm3e4QQYa/3zKd/bu/hrAXXxR8ZR4TuS9fWabH45i7hsfWUY81gb+/07UNfuz78em4P9nmNcpIbX/LcPul+jlaHfKQadWQ9dx/5IN+uaR+bl76xG8Wyq/vAngI7GSKz80Qn716nXz68dvq0X2TZfu7au6a93KdO/4zbEiDy40N+EZ74EiL/ZT9J70V8T1J0Skw/EQn6/xARY4TW3xZGakju9Q92D+GRwT8EvkQa6b1Ogk9CRIavzxefBEh6TArXZ4tP8nNSXPzo24Zl+j0gww7UpMFrwIYG6fpX0g1iNeJLFEgBTrKQs6TBt7lLeOytD0tO1X5O3z70tevDr+f2YJ/XKCe58SXP/O5h9y9idC/pkI9Uo47sNdrXKR/kK/YixB6Z/o3f/I3nm/EeBA2IJGR3KimvR3bBkPmzf/1/vh5NbrzHelfdY5hndwINkYrc7f8Hj9Po5v3zf/Z/XLH2+Q/+8D5hhupCPvWLruG/e/Qq7nqSrds+Q+uoLxbZRHg9yrX/v/3bf/PaV3G+0Npd23VSe1ybQVqvaopbQ/+kE+Z/9ju/fcVco7j9ub5s6//X/+XvXuvJ7T60f2uXlx7Sy4k45O8gL65v0IMM1WQn2fTNIa2lhp3MF+xra8+98OuzKK9+avSVv/Xk5vBbL//mi9HBL1Dpn/ZK1v+D6NIRXTIbcfHJC+k9ueCT11r02777n6RIv2qfRHed8r5+EPEb8nvnSw8v/Ul8SHHti/zyPU+EYU+UyDFEZhEbwkN0JyGKrb72nhBPvAhyyO86DT4fny5RRnj3KbCh2HB8xEdGlA1Ig9agNETXv7qhyuY788XqecXq/ZDvyAKQxX7eSAb5SATBlOPUlr7EWFzfoMeuXU32rknfHNJaatjJfMG+tvbcC/+V/9AX3bfIMBmW0M7XgNwcfq9p/s1//ePe/8Ev/+oPv/t3/vNLv9/oH8OALwJzggyRl0egkUMDvEEvXm4D3/BpePf5pP5LiOXUL8JNDxFF5PDv/u2/fvWLRCKJevgsrT4Gm8GVdIKyXnW/9dhPeuRQTvX/6+Mk2XrJ9tMey6lnBNaesuuTXp44QkQ2v/23/tNrn9nldM37GaNfKNqz+N6z7kF5Df323v3Lbn/Vdg2tm52+e5Mnnq3vxsU27v6F9l4OW1458vRI8m38c9BXfbo+Ytmw/Tb/zLEP4JdjvRObW2/11tx1T92pLYJLhkiJD1GJs1f/8N0973prfcRu+bHGEqfYVfskuySCWx2yI8OL/J6xtZcIkdyLCCHCW/J76B6dvnAQoFNiJLeE+DkyLP+qR3qdBA8yTF6nxAehIUGnw5MQI7yIr9MgPQk3Yd5DcgfsDk1ktsPUv1mazEfmO4fx6gghEoB8yARRLJEglvStkfdXxcU2Xg094iyHLa8ceXok+Tb+OeirPl0fsewXHv26T+7b3j8oZ8nR/SYDAjyxufW+CLE33C//tV+7Brs34/0mvIdGMCjoxQ3khjdC7KRosIXrM7x//k8v/X/6o7//ItAQ0VVTfgQR+fmiSGitCKK61oxoIm0xpPcvHv3v4XT7k+V3UnP6Cr/zIJ72XK68ToOdCtOLVZOuV/tyyqvnEmKIENtTseo9oq2264pc7CN/99iptJr6Iz3QuzjCz+90qf9Fxs+9nyjudagP/+rBeksYGwvv6uWfdfR+Jthy/NIQ6rOxpP586q0nnlzfO+j/OZSTrEewN/2T/Zzsz5U4XzpyCkt8Fzk9SeokxJCPX6yeejtR3uvc5Pf6JulD7xFpOh/0rdKIzckPIsVOjP7FGqT4Tr/sgwj3BJgUj/R6TIoQiy0pLtldxPYkwLVJj0dhydJj0dfj0QcJvv7cwrdOkd5D7hdpkKJHpogvMuykiBjz3f6PARzYhiZCXL/BypdeHqJcP/uqS2+YPyQgD+SyMfHNe4fiCGZJ6iQsfXYPGwvv6uWfdfQInS1nT6j12VhSf75s9+r8JWR97+D1+BzKSdZjX6fXt0z/2q/8+osMvPnpO3gipUisIZ7sdFNO5Nbw1q+a9AgCKUUEvrBTfMkmHTmqDa0XKVZDb3gZHPVHEveA+hgsXU9kyddJ7U//6f926dDekFgEgxztAdHbl1Oa/UWoSCl/uhhEmJFo+0ivJn+26+7+5WNDvyR0Uiy33tW6HoRYXXZYvf2S1YglXZ9YcDLcvORZmwT1YnJJxLjx7bexeqVXI755m5O0V+vz6b8x9mLzdo3873q875Wv+g/kAzaCjASzT5K8+36QbYRIT154kNr2QpTpr15P8kvu41D/Ek0yH5nvPClevsjuSXrno9N8vlzjs0IkmI4U05fckN/r1PckvDMutnFEGPqW6bs/u4gE/f3hnhT5kh6Vfg43Od7D9t3gZMMO6M0/c6q9CPAJfgSxxLJAHIgoSYfi73Qkk9RHjvXEgpPh5iXP2iSoF5NLIsaNb7+N1Svd6fiK5X9I99Vr4PVwH9fn/m6Mvdg8a7wemfalmsitwZ19DpvQo8ROKfzlItE//7//7CI3A9BAiTgjlXSEVu9yOk0uIW6uHp0oq8u+6h928QZEMjLryzNq4Io9rseXToITYrF61wOhZReLEA3VUD3Sz9/neAg4X/ege1IsgpJbvPr0fIi43PLyh73uTtJOhGojxUg7e0+IYQnYfsTW3tNaer2yrQF8ASm5F8X02Nyzj9dWLDsU27xigR32BBnKt4+gRu9QTdK6QW36Srqa7Uvf2n4+ymWL58++ka94fW7CQ1hiSHBzL/L6Bf3Oq7/PFEP99Lzznn0fxHeSInLz94f7CNXJ0WeLS4Tp1eS/iPH5xRmnweCEeJLenhJJuZEbwkNufHsiRIZ0cfqSn9MhInzpEdoTyNApMTghBidDBJnMn89QNTAN3uR+4/GMGcriW7+DmQxLBCTiSCKG05b3Tp7xPa2l1yt7e8rNF5DSEp4em3v2cQ1i2aHY5hUL7LAnyFC+++2+ua90j6bd/3Dd12fOSvo+ztaX/iLE/jC/4d9A7tugDYH8vUkjsWTDN1Iy4LJ9PmawI6zyEahh1Qkx+37j36evTkDFW69+naCyQ/vxGWK2R676NzQiGwSzgy7Zvtsvu/V9hhgaPBFOpJgdwXT9ScQR4bauHu3xf/6jP7xiavKll1N966S35/R+aWD70k79268TaDJy7X7qVe/uafchu3tXjnin7faid3tCIHL2dQR737zV67U16fqceelk19P66dZYXd/FmXvGF3K8Nnxs90Cf5Obps7B38d1jPx/bLzt5rfW8z8jIiY9EYueXaRBX+qd/r/ih3+t96GLn41FkGNKv+BMRnNPe4nP+FxE+YhdpIrQ5GQKyXOILr1PhxE6iexHckF5x5MgO5bA9FkWIEWH/nJt/0i1ff5CPDJHg2pe8ToAPvdiTIJHi/bj0JrQGsQG6JBc2tn56MqhbGznW43pM98hv+CMPRIIUkMna4uknce3pKomEsmHXIFe3pvx0fc68dDJCQ77WWF3fxZn7C/GB++z+87Hd230tNk+fRTXFxK9vmfbG7oTYMAgN6AZ7ZBQ84ouYsq9Heb/x1y9yijDq4bTXEC9WDiLYoaRveR4PbjxyiQTKC+WIRS6RXDZEiH/8j/6XT3z3QPn4jI2va7tI8dk7lGP9K/9BOr//+//NFTsJvvpOa+2/eNeMEHfd6rqu0P2prljr1L919Ov66hchZhe3t9ZOdrqsb78sIP8QeToBV7t7oINrBHtKiiXzIVV5+fU/fUGfzQm75rs9nDHx7GT70NMaGy9f7a69veRvPHt95/Xqf0Kd+K1/kGD4ILLbFrsI7aEjL3lspHf3/shJbhzB7ulQ3vWH+09Ce/cv1JBLhOwkMr1iD+K7CO2Ji/AeREi//lm2Jb4H0jcWkBoCRHrZcMb9mUZ45T1Jj4RI0n8UHOF9Qn6R3uhOiAgRnA5vMvw4QSyhsZOG7jlsyS/V8fE39E/CWHJIIiN56Ww5WyueDnJhyezsj1Tl5df/9AV9Nifsmu/2sPeoe3Pez4jOvXS/Nr6vw97z7SV/49nrax2x1wnxV3/tP7qkN/rqBo4BtH55kWVEkN6AOfO2lj/5bgDJDZ8bUHLs4dwff4TZo0hx9Wqtka/TV6RznjR3jeyN8W9c3+S5RrpYNuTbeDCoN5+OvOsbtp99pG9dsA85cOYmIX9Yvz4hf/H18dPPfHgXo1vz7Bvy2W/YfvTF5qn1c/oO1g5b65QotoS35IQQlxTl8UVuH/HWuddsjeTdZ2N3D/35khCZLQEulgTF+Rb5ERpiRIbZ65fX6dAJcb9kgwDDEhz9PD0GuUF8STDsl2yyI0afFUaA6clIEPJFeMjPydBJ0SPUfaRm4KY3QA1TMf6N76Cmy0kXy17CIGFPe8iEnsxGREs2SCp96wLSkgNnbhLy75pBn5C/+Pr46Wd+6D7s/XN/6Oe9W+RzD4P7uvpi89RGhGfe9Y97Nxi+RIhkgyQJ2ZFHcr9Us7mGD+Tb38ihPmrJE/n1Y5+SXk65neg6qXUC4wd7VNNJ2JdqivPL29xk/mS5G9/8d+sFuh7BvdRP75WhU2HXlJS78X10KVZfkBfkhI2t/53t9dJz85LB3hZqxNjy3/XaPvStP1GP9qcm30rrbL5ccbH0XQshiiG718ntaS8JIi16MfEXkT1Pe/c69ekefUqIl/9xgvPotLi6u/bRb8jP6S84+a0vlOubp+tDdEuA55drIsBOg8gQCSbZERpCRHT+p/yFP9ZHjggRnAwv4ptvmn4iI7qIrZPeg9giwT0hhggPPD5dgrx9j0H+HLbpDVADky9pUBvc62cXg/W/9IdEFL7UsuSDpMgTcje+jy7F6gtbLydsbP3vbJ/36bl5yWBvCzXXnvI97L2P7ks2ufeXThY/UQ+/1MhZaZ3Nl3sRYgOhP8xPGgYGgMEhFgzuzfN54PqSoF7MOuQOcH4xfrF6pSNW/nc5SXu1Pp/+Yk5dfBuj7xr5zx7FSH7gW3li83fv8jdGF0NS9pQvXS77JAsxtSfs4+yze3jX64wvNiZXHTspf/fBt/mhHD46W932/VxNP1dbf/Yi75PcB/ndRPZXnxpf5DVxOYhwyY4MkSF9IcfJb0+BgOxOPbIkX4T5JEKfFzohhosEn/4lQSfG9SE0xHiR24Pw0leej0kRKHKM8JYU0/v88BNSfJKek2G602G+69RYTrEHIkAnxnTkaFBCA5RucPJvzJAm+YHvE3kAmSCOk6Q2RhdDUsgxHzJcu7z07UcvfsI+zj67h3e9zvii2N6bJUJ2Ml/onuZb8tr8sPedzla3fd/VXITYgHRCNHTSDYmVYYcEm745JOJSwzZ4goG1tede+PVZlFc/NfrK33pyc/itl3/zxejrk3P2oufvHn8uDsU3x32Cva70JUB72/z8+da/edaSE/TamFrxtUP57XVzYXst9Cq+e9Lv7MW3fraY+7H+Jf/s7RP0Urv1sPcCPNaMhBDdkh0dUbH5znwxfT/tf8slxiv3SY7+JvHyP8kuIDdEF5Df/j2iP8mQe+U/CC0guX08GllmL/HRXznsB5k5ESJEdhLx7aNTMl+4aof49k8wIJL0Xz+F6/FoJIcIHzKCdBpEgkuKyPIclEnDlL4+OdWks+n5O7G8iyOMgIDY+1leiESWpJYAL4JpD5OfHwHxbZ615AS9NqZWfO1QvhOpGGyvxZX78Hf/3Ff3ZW3Ye8/HFru+pHT496SYvX2CXmpff5i/wyDZ4FjfYmNy1bGT8s/BB/JDOXx0trrt+7kaJJsezl7k9twYZCOkd/6T4N7lFa8/soC9DrnsYrvnd9g97xrq7Ev+2V/95r6rse/1f87ePvlcxynVkqd/Y0mQQ1YX9jXKJumQvfvIp58cfcj1w+YHp8EltYusnidF9qek9+EX88j1g0B7bT79sk22zx23H/2KP4lvCRAQID8SXBKlOwFe5DaPScPGwj4uZScv34PcEB7Sg4gOkOXq7IsUn6T3jhhf+oPQIsUI0Glx9UgRGXpcSiLEG/eg9GWLc4DmPwnuXZ6Bf35WlU/+kghyiUDSP4eT1BCSOgQk/+yvfnPf1SzJ8X/O3j75XMcp1SbdC/fR/Xndm3KfkEMit32Nskk6ZHs9kvn0k5P9+h/zdxiEHS5n3FDa3OQ5QMXlG0ZB3x1o+1t6cX2DHrt2Ndm7Jn1zSGupYSfzBfva2nMv/PosyqufGn3lbz25OfzWy7/5YvT1yTl70fOfRL5xKL457hPsdaV73dhnz/z51r951pIT9NqYWvG1Q/ntdXNhey30Kr57Sn6c0j7y+T78XVvXcBPZOyCwRf5PCfNDr1fg+5CP9SOyKzZ9Hj7xCO1FaqNHgkt4fGe+WKSH/JIXwT3lnhYDAtwv05AIDrGlI8gIz2kxff/RbwTK9uUZEjEuKX5CfE+wkxdZPnSPR/ufL7L9DxjhJshPh7IBm77+HaZQXkNaTTlB/tYnkQiyQBgRiBgCSYrR1yfn7EXP36nyc3Eovjn/X51U3Ye9L5DP/dt79rpvT//WufebC9troZfX6/U/5ifDDo108bV3cAQ+cQOGXL38BugZ1ytsrjyx7NY41w/1TapVtz65X4onoZx8crdm43L4z33L4WeDvK1LFzvzvqTDrr+6PFJu61lT/F2+XvKWMLPf7bsasvjG6HpAvnLV8gW/xOTTb+Nf8ge1YvQF/+dq75+3Tz9DvAjqaQPfX/3/JH7ErYkY7/UfOUOI6cn9fxKXAJfonAiT7OTmBMR5kVmPRZ8kuPaSZIj8IkWPUZMv+0lsSPAitwfxrY8fNlceEvT5IRJEjMHfIX7ymeGTDPmcAhGjk+H9qPTWd2A2LHcAk4auuBz+cwDL4We/IwpktORy5n1JB33C6vJIuRdJPdcUf5evl7wlzOx3+66GLF7sdQ+eunu192zvF1+I+NzfcrZG7uf84Xxt6J+cEE+cA4c0AHdQndhYOmTXRywpF3aQBevxq60u39n37GFtdUm125P+rg99JX/YNdhnXzadzUdfbM3p8wvA+pYo7McJrn0UVxNci1x99hr55K1v9WLW4oNsr6PcM299Z657mJ2eTyy5uentY2v0cF3yxPWA1o+gFv0x/k1a971tDcR2ntoQlLhYdnLzA1K0l3udmyRb9/bfvavdngE5Rmh78kN4S4zkEqEcQIBJj0hJ/2wbAkw/8SLHJ8EBkvM4NJk/CSdBXp81PskQASY7HeZzaoz0Ir9PCPCBiNGjU6TnNLhESG+QGqCGKn0lf2jALtEZuOnnYKZfyC5/9AX/xunnl2OSHp1mIyEnuIjIY1BAXnL1WVLjk7e+1YtZiw+yEafcvSd7z8I+Cs1/vg7uNbm56T3S3ho9wuaJ6/ELnyFCvh08fGGHrqGz8S/5wzmM6Av+z9Uig3MdOfzq1aW3/+Ln0EwCW326Yb++d9eSrO/2tt8z317VJPf+7r7l8POdPUn93sV3ze0l53N60rXwbS97Z5eztfayOZu3e11dXjWLYmSwPoi3Z6/39lF39irnrE/mi6Q+9PLL63rKvYG0lsA2j5RbT33vPWz+bW9ftU6HL9+T8JbsEGTyHRGSn+B5EryI7XkaTIYI8UWWz8elV/xBgAiSH+kFBIcYxegLfrURHhJMnv9rfojwLgKMKJ+EiCCvuifx9Yg08vM/XnycDBuKN9hJuv8v8fbdA/QcrKThy/bljjM/YkA+5ElqSy7l8PPJkUcu2Z3xXXN7yfmcnkTEfNvL3t2Dvdak60/K2by9P6vLq2ZRjAxOjiDe/UeS20cd/fX/IXrj7xBInjiHSfbGtp9YvgaVPPWbp++7OLl6Ug3fDmq2/Wwen2tNgjwxNe8klNteXOPGQr69xs1Ltk85+fa65NC3T/5w7rX4Xou8rS2uTu3mb6ya0xfK3deV79ST1oXsk6DO3KR9hnznesH92x4n8uvHPiW9nHNP/IC8ENGSVPqSIJ/TIdmpcP+H/Y91br019Nhed/xjrcWSGtLrG6Ueha4dOSJLMXn7SHThcan4EuI+Nn3ZD1KLAH1WuCSH9DoRnqfGjSdfpPc8HSLDJN9FkpFVpPVAdkSIFC9izN+j1IfukWkSEKAYMvxF+YEGb0N2TzWLfDuIPzn9POSe4JZgAPGIiecPCI+v+Ely/GqLq1O7+Rur5vSFcp361nfJB1x7ckmIfRLUmZtccsvn3i3qo5Y8kV8/9inDLzwybRAYAnzBIFl/+rshs7lLUuytD9YM1X5O3z70tXeI6bk92Oc1yklufIlq+6Q3mKtfHfKRatSR9dx95IN8u+YOfDnpGwM1xb+0B/Hduxz6+kJ7Otfb3NX32ha7frJ+6fK3Xv67OvJLdXz82fqxxenq5KWz5dxEdeuICDkhq/UlkSDsyXJ18Ah1sf2S+2UaOE+BK0/SSwdxtSchOimuP+I7STDJDj/5psehPQK9CW6/OIP09hHpnh5X/0n6RYwPe0gQOQaPTCNDJ8TXyfCJiO48FSI/pCjuRJgtR16DuUHagKWDoZs0aAM7iQiQCIJCOkgtHWFuHuLZR5RBTXH5X4rvI1Q59PWF9nSut7mrd21d696XvSfpSSdn+WLZ8t/VkV+q4+PP1o8tTn89MjUADAF6g+OM7TBZ+Tm9/P3Nvn47cDZvB09gG9zlkPo0VLc2pFeTX2/+sze/nGLWI+WWky0v8G3vd7l6yBGTK7b65p1+drB/e9j98q+P9LqcayR3jbOndbYWtlZMbdhebHnv5Bn3mmSn28v2lJsvuM7dux6be/ZxEhTLRoh33o3PndoiO4S3sfRqoN7hjrXe7cuWgwDX3j5X/we57b9j6hEq0iNfJ8Gnz0lRHPntY1Nk6LPEJcHkOz0i/OZBmt/+/KtPiC7sCTAZMSJBZMn+phNmvsgz8nt+dhj8d1BLfun+LjGbjMwiwnCS3BJlj1VXyi0n+xy2ScM2FOeXew7py/ewg1NYZLL6Es3pZ4eILhtZIr58/Osj93O9M7ZrnD2ts7VQvGvb63ft573Y+0E/5Rn3C0h2uvu+PeXmC06W7Um+Hpv7S4ZWb+6GRrahYSgs7jfpLd9Bv9O39euzFr88MXkbS68GtlaMLUeftbePHoZtkBP01iPJt/V8ofozdl4P+Tm9fMM87H7PPPvKF9iuyfXIDf//LxMf+7cHayG/7PWR/oumiAjZIaYXaT3JkC4PPvyPPT3vV/76p9/r2Ven84/akM961z7mdNgf3CM6vlCOPIRZXkQqFgkitgVSvAjyQXgnOjGu3ekwQowYl+icCpEgfz4o9jo9PmKdDp0QkWFwQozwrsei+R4SMYYlROSH6EL6EmCQExAl8jwH6Q5Y+rvhm0/O1eMhEck7PXLZx5KI7SQjJMUX2E6B5ZD6dOLb2pBeTX69+c/e/HKKXbUPuado1+66k4Hv3X2ii2+dmFyx1Tfv9LNDvbOT1yPTBpc3PJk/GBz5+eTII8v9XFxsB4/Yl/Skx2p828ve2eVsrb1szubtXleXV82iGBmsD+LtGdlsH3Vnr3LO+mQ+9fRy6FBcDPjKTd+6dLHWUiOWP6R3jXzy9Dvt9a9eLbs13Bs+8Xc+PeibB1u3vlCfc++bsz3ZZy6Con/Y7fOD+C5SevrYfU5YvMegm4fUbpv/XiP9/OZp+pKiHslOi2HJENFdJ76nPxsJkvsZ4yv/eSJ0GtxT4pLlRXpPiQw/IdPs5ykROZ4E+CU9eT1mfeg3GT7i1ykx+ej784//TR/pIUaESOaL5JwEP8jtF3V5CBGK3fIepk4oYOj+v/0SRwSCdJBMvogK8RRbfUkIiosBX7npW5cuto9BxfKHdITMDvqd9ks+sNfbvWF3P9wbPvF3Pj3omwdbt76wr83G5WzP65HpDgED5H4DfjogDcbgTbp5gX3GydWTavgQgdxs+9k8PoMuCfLE1LyTUG57cY0bC/n2GjcviVTE97rk0LdP/nDutfhei7ytLa5O7eZvrJrTF8rd15Xv1JPWhWzEJnbmJu0z5DvXC+7f9jiRXz/2KenlnHvihzO+vnT+JUO+pNPbL5zSRkeAizP3jC+s2+kRGVbTt0uzLxJ89rpqhgTTkeECEYpnb+yqfxBfhLaE6M8twkWOEdwDV96D6BDiFRd74P788Ja3fhNdshPgkmDkR2dfj03zPREx3p8pJh/x7x6D8CHhIr5Iq1jkFpk95Qeh3RIiwwiwE+IZCydJegTXIE36YofBTMIO4mLiCAXZIJQlsiWf/CHfkpbazd/YEh1fKHdPoHynnrQuZDthisnd+4CQEJx7t3D/ipMn8uvHPiW9HHvg44cznu/6lum++ZMNrAYD3+rJ8tMNkHz8esnfePb6djDm0/+EOnG6mt0/2xpiu7dykgvxjaXvvpLvaq0lzj5h/bC9kru3s17eriPGl9x+4ulw5qjtdXDt+c59JsX9gsKWmw5i9YLtEfQXF5Onhp08a/mS5afrc9ZYQ+5ZL0/OxsLH3wLeOfu3gfcjz/Kqbf1qbyAxkJsUuwntscfr/SDvSXjXXp++J/k5DV59nrqcSO11yntgCfKE2Emg12eQPiecUyKSdFpMRoL5+Pd0eJHiI/5BhDdB8u03TxEje3H5hwzpTopIcYnw/FJN8sKT7JKLCDFsLB0Bsj/iH8O8wbpDl32igUuXi0AQFaJJB0TDz17fSUji6XDmqI0QW5/vJNmkeASYzpabDvncB3D9rtt9EBeTp4adPGv5kuWn63PWWEPuWS/v9f8hBgRlYBgI1wA4BorhsMOleFCXVLs96e/60Ffyh12DffZl09l89MXWnL5I4PQhkWz72VNicTXBtcjVZ6+RT976Vi9mLT7I9jrKPfPWd+a6h9np+cSSm5vePrZGD9clT1wPaH35wFe8+nONsHY5YfvTQ7n18JqcffiCPuk3GX3a6yaq+5ruvPRqqv/Ql/j4NmeBGJEfiSARZvqJO3b3TV+CcxJc8kvCngwRobqL0IYAI0Vkl+6E+I4Q95T4028ju0f+kwSXEPd06LNC+sqLGJMPdDL0jVO2b5q+e2S69p4QT/CfxJfs26anz6PShqkhvKdEn5/BObBfQ7jhnL8+DyyprG/1YvuYU408Jz65Z976zlwkmY0cxZKbm+6EePbY6+1al3TYoftU7oKvePUer26PtctxX/Wnh3Lr4TU5+/D95Pu/+OH/AZCz4l481/fgAAAAAElFTkSuQmCC" InformativeScreenshot="3200db85a3aa2f9792a96cf3a7e8b952.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+                    </uix:NKeyboardShortcuts.Target>
+                  </uix:NKeyboardShortcuts>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Send Message'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="941, 638, 56, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia automationid='SubmitButton' cls='Button' name='Send message' /&gt;" FuzzySelectorArgument="&lt;uia automationid='SubmitButton' cls='Button' name='Send message' role='button' /&gt;" Guid="8559e288-878b-482b-828f-012f0c609630" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAwCAYAAABNPhkJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVGhD5Vo9bxNBEPU/cQe/ggoEkWjo+APUdAhBScVHIoQQkVwHETsiSIYS0cVJGiSKYCIQJZId+/wRx46gWe5N9EbrY6Bx1ti7SO9udubt2s/zcReJUm985Hz0J538Po3+pOuykyNB0Yd7d9T+g497cQ94vs+3Eesct6Z8BNaD02yKW+T5viKX3xXrUnfUyh0ItHIHNpx9ef8AbOAmHIa4fyBAH/mMk8Mz6PP5gH8Gba65zz/3b3vw/fz9xbOmMgyx218abqW25koPby01rlZX3VZzRwXjroKRXaC8fsfcvMy4ULlXyHB+AWrNhrkhBrw93HdZnuF+Lro0QH/kgq9sPjHJMeDG62ciVgTjAtEWMSawkpMRrCUN1SkIhliIFsGi3CDFBGjUDCclWA2DFBM0sbikMqWT6mG+bySTYWiUxCLNotwgxQRNLAypbYM0C8a/frq9H9/dpZePzPi8oa0bqoe/9toCCr9Zr5i8eQE6JcNqGKRZsHGwJ0LL63fF7k5G8gPcfr9p8kMDGqV1QwlGRiHS9z3/+EGFw/ZjoaGtq8oN0qyAOKuUHzTeiWjE5yVcdcII0cMAShrlbMUAlDeF1799kvK3eOcBiBWduIQSzExaMR+Y5PhxMOBCCdfWDf0c/te/Yo8j45b/PKAlnUqGITj40Fq0Hg5e0hBiTWlM5nlPaWjUoRVC8KI9h6FRSro7bLnhaWaSZoH/poVypdD/9aalGYZqUW6QZgHEAYvyLq1DK9SUXrS/lnRWDceZ64/CPJYWCYOT/I0SOnFJQXDvOO/hlASjkgEpaaTbIsUEFQyxKQhGSYtOqMbCIsUETSz6N4UM66zSVBukmKCJzYbtJARDo2QYRlKCtbYNUkzQ1kVJY1JffvXYJMaA67WnklR5DtN409w1yTFg+/PudA8z3eUX8f3HtIuV+6INGlUwHcDWwY67Vl01Ny8TVqprrn64L9VLjYC+ePBOYE2wAgj/EO6Dj/OA+xgHfD9j4MPmrw8fbHK55qPTP4824kVgP1E8V6c0gQDvJNImELdsfoDPp80YABs+rn3b9/n7Lb7PARhnDD5+1tnnd9xvVFZQZzl0ZDwAAAAASUVORK5CYII=" InformativeScreenshot="a868e7d027dfc18dadb5a695116e8108.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="457, 638, 44, 44" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia automationid='PlusButton' cls='Button' /&gt;" FuzzySelectorArgument="&lt;uia automationid='PlusButton' cls='Button' role='button' check:fulltext='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="496,781" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard - Clear" sap:VirtualizedContainerService.HintSize="434,69" sap2010:WorkflowViewState.IdRef="SetToClipboard_1">
+                    <ui:SetToClipboard.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:SetToClipboard.Text>
+                  </ui:SetToClipboard>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="434,69" sap2010:WorkflowViewState.IdRef="SetToClipboard_3" Text="[in_Message]" />
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Type'" sap:VirtualizedContainerService.HintSize="434,208" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
+                    <uix:NKeyboardShortcuts.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="558, 683, 748, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Type'" FullSelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to*' /&gt;" FuzzySelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to*' role='edit' /&gt;" Guid="e0a06b2f-31c0-4970-bddb-a0d7847f32ce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvAAAAAsCAYAAAADxYwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVHhe7drRbeQ2FAVQ9w+4BJfgDlyBK3ABLsAdTHAT3+CBkbzZjRWAO+cAxIzIR4rS15WghxsAALANAR4AADYiwAMAwEYEeAAA2IgADwAAGxHgAQBgIwI8AABsRIAHAICNCPAAALARAR4AADYiwAMAwEYEeAAA2MgvB/iHB9kfAAD+bwI8AABsRIAHAICNCPAAALCR/xTgHx8fD9vHx8dnFQAA8J2+5Q3809PT7f39/fMIAAC4igAPAAAb+fYAn89njj6jSV9qXl9fby8vL3/+9pOb5+fnz6q/pK5jnXcma83as893skb2+fb29ndt/s9zrfvotcz6mvtP63nP+ud50+ZakXN3LGusD0XzOjMGAMB9uuQNfAN6Jaw2HDfgzvHMz5xoaO56DdhnOi+y5hrCq+u0voF61ud4But53H3ld91Tar7qj7nPtS5jcx+9R6nr8QztqZ/rAQBwPy4J8Pk/A2fCaYPwUcie9UfhNPVz/TPreaejsRmSI+ftg8XRPjPeUJ65Ded11n9k1h3Nmfd03Wdqz64TAIDf2yUBPtrXUFsJxmtAT10DacZSv7Y+AKzSv9Yemeeo1M59rwF+XTet45nXvrm3s/7eh9lSu96fmvd0ndcGAMD9uSzAN6ivgX09jgTdvu2eIfpHUjdDecPzkYz9bIBf93lmXafa333Nt+wdOwvwc811LgAA9+uyAJ/Amf7185cE4xlOI8d9W53+fxtYE7BnyM7/zD2SdX8mwDdYz/FK3+zPutn/WX/aPHeO59q5R0fX0fEcr5/zAABwny4L8JHQuQbPvtlOf0JqWkNzNeC2rcF7mnUNvkeyv3Wd1M59Z/7cS8bm+l177c+8r/pjXm/3Oc/dsbQG/jk+56et9wwAgPvwLQH+TEJnwujUAM/XEtJ9NgMAwOqyAN+30SsB/sfy4JMGAACrXw7wX+lnHkdvkAX4f1o/jxHeAQA4c0mABwAAriHAAwDARgR4AADYiAAPAAAbEeABAGAjAjwAAGxEgAcAgI0I8AAAsBEBHgAANiLAAwDARgR4AADYiAAPAAAbEeABAGAjAjwAAGxEgAcAgG3cbn8As7eXQjDpIIYAAAAASUVORK5CYII=" InformativeScreenshot="f5babd620a5316e210bc85be9e0fe4ad.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive" />
+                    </uix:NKeyboardShortcuts.Target>
+                  </uix:NKeyboardShortcuts>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Send Message'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="1314, 683, 52, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia automationid='RightButton' cls='Button' name='Send message' /&gt;" FuzzySelectorArgument="&lt;uia automationid='RightButton' cls='Button' name='Send message' role='button' /&gt;" Guid="dc5454ca-e6d9-4a94-b013-3beeedc95721" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVGhD7ZdhDYMwEIXnAwdIQApOEIKCGsAAAiqgAjCAhW6voUt/lCxbWthr3pdc0rT84OOO43j4xpEgOxJkR4LsSJAdCbIjQXYk+C193/tpmvy2bcfOvRQXHMcxRBR1zh0n91Bc0BgTxPZ9D+thGIKwtfa44lqKCyJjkEpZluUtivWVVGkykMmV5rquQRLnV4lWEUSJmld5noFyjaLzPIdyrkUVwZipT6DT4mGgIdUSrSIIuq47DWQuBRnN7ZdAGfyF5t9B3Hiui6Jz0nfR5r+DJplkUH5RrJlJBjKIZmfR5v8m/g0JsiNBdiTIjgTZkSA7EmRHgtx4/wRViM8bjCyiBwAAAABJRU5ErkJggg==" InformativeScreenshot="3fdc58e951b33cb71d912b47a6fae648.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="498, 683, 52, 40" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia automationid='AttachButton' cls='Button' name='Add attachment' /&gt;" FuzzySelectorArgument="&lt;uia automationid='AttachButton' cls='Button' name='Add attachment' role='button' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVGhD7dbRDYJAEIRh+6ADSqAESqADCqICGqAZ2qCFNXPxoiFofHAWh8yfGI7j6ctyxFtcPAPVM1A9A9UzUD0D1TNQPQN/2bquMY5jNE1Tflhjj1kaEJC2bWOe59i2rexhjT0mMgVYccuyPHaeAYlJsqIDP+EQponXlRUVuMfhvu/7sq7JAo9wR5OUfEW/xeEe+3jOigLsuu4vcCj1DNaycCjtDNYycYgGHIahfEBey8YhGnD/6T8Dh6gTnKaprDP+kr2LegaBxCRxPQOHaMB/yUD1DFTPQPUMVM9A9QxUz0D1Lg6MuANbduUpC6uArwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'edit Type'" sap:VirtualizedContainerService.HintSize="334,208" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
+                            <uix:NKeyboardShortcuts.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="558, 683, 748, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Type'" FullSelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type*' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type*' role='edit' /&gt;" Guid="4c9af397-dc39-4b20-a283-671fed92456e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvAAAAAsCAYAAAADxYwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMsSURBVHhe7drRbeQ2FAVQ9w+4BJfgDlyBK3ABLsAdTHAT3+CBkbzZjbUAM+cAxIzIR4rS15WghxsAALANAR4AADYiwAMAwEYEeAAA2IgADwAAGxHgAQBgIwI8AABsRIAHAICNCPAAALARAR4AADbyywH+4UH2BwCA302ABwCAjQjwAACwEQEeAAA2IsADAMBGBHgAANjIfwrwj4+Ph+3j4+OzCgAA+E7f8gb+6enp9v7+/nkEAABcRYAHAICNfHuAz+czR5/RpC81r6+vt5eXlz9/+8nN8/PzZ9VfUtexzjuTtWbt2ec7WSP7fHt7+7s2/+e51n30WmZ9zf2n9bxn/fO8aXOtyLk7ljXWh6J5nRkDAOA+XfIGvgG9ElYbjhtw53jmZ040NHe9BuwznRdZcw3h1XVa30A963M8g/U87r7yu+4pNV/1x9znWpexuY/eo9T1eIb21M/1AAC4H5cE+PyfgTPhtEH4KGTP+qNwmvq5/pn1vNPR2AzJkfP2weJonxlvKM/chvM66z8y647mzHu67jO1Z9cJAMD/2yUBPtrXUFsJxmtAT10DacZSv7Y+AKzSv9Yemeeo1M59rwF+XTet45nXvrm3s/7eh9lSu96fmvd0ndcGAMD9uSzAN6ivgX09jgTdvu2eIfpHUjdDecPzkYz9bIBf93lmXafa333Nt+wdOwvwc811LgAA9+uyAJ/Amf7185cE4xlOI8d9W53+fxtYE7BnyM7/zD2SdX8mwDdYz/FK3+zPutn/WX/aPHeO59q5R0fX0fEcr5/zAABwny4L8JHQuQbPvtlOf0JqWkNzNeC2rcF7mnUNvkeyv3Wd1M59Z/7cS8bm+l177c+8r/pjXm/3Oc/dsbQG/jk+56et9wwAgPvwLQH+TEJnwujUAM/XEtJ9NgMAwOqyAN+30SsB/sfy4JMGAACrSwJ8P/M4eoMswP/T+nmM8A4AwJlfDvAAAMDvJ8ADAMBGBHgAANiIAA8AABsR4AEAYCMCPAAAbESABwCAjQjwAACwEQEeAAA2IsADAMBGBHgAANiIAA8AABsR4AEAYCMCPAAAbESABwCAbdxufwDGqI5LLfbulgAAAABJRU5ErkJggg==" InformativeScreenshot="a2ebf396073b07c9012398e701250441.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="498, 683, 52, 40" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia automationid='AttachButton' cls='Button' name='Add attachment' /&gt;" FuzzySelectorArgument="&lt;uia automationid='AttachButton' cls='Button' name='Add attachment' role='button' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAsCAYAAAAwwXuTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVGhD7dbRDYJAEIRh+6ADSqAESqADCqICGqAZ2qCFNXPxoiFofHAWh8yfGI7j6ctyxFtcPAPVM1A9A9UzUD0D1TNQPQN/2bquMY5jNE1Tflhjj1kaEJC2bWOe59i2rexhjT0mMgVYccuyPHaeAYlJsqIDP+EQponXlRUVuMfhvu/7sq7JAo9wR5OUfEW/xeEe+3jOigLsuu4vcCj1DNaycCjtDNYycYgGHIahfEBey8YhGnD/6T8Dh6gTnKaprDP+kr2LegaBxCRxPQOHaMB/yUD1DFTPQPUMVM9A9QxUz0D1Lg6MuANbduUpC6uArwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NKeyboardShortcuts.Target>
+                          </uix:NKeyboardShortcuts>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="578,61" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,349" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'edit Type'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8fb83472-934b-485b-8be3-95f016cde8ea" Text="[in_Message]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="558, 683, 748, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'edit Type'" FullSelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to group GRP App Dev' /&gt;" FuzzySelectorArgument="&lt;uia automationid='TextBox' cls='RichEditBox' name='Type to group GRP App Dev' role='edit' /&gt;" Guid="a012d245-e6aa-4be4-996f-da39a59e546d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvAAAAAsCAYAAAADxYwHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANISURBVHhe7drBTeRAEAXQzQTyIAtiIAKuXLlyJT4iIIVZ/ZUKFYUNuwuW6OEdnsaurm63ffpj+dfl5eUJAABYgwAPAAALeQnwFxcXAADANyXAAwDAQgR4AABYiAAPAAALEeABAGAhAjwAACxEgAcAgIUI8AAAsBABHgAAFiLAAwDAQj4d4J+enjbrAADA1xPgAQBgIQI8AAAsRIAHAICFfDrAPz8/nx4fHzddXV1tzgEAAP7PpwN8fwP/8PBwur6+fjUOAAB8HQEeAAAWcliAz+czW5/RpJae29vb093d3Z/f+uTm/v7+VW/6aqzm9fEua/Xevc93skb2eXNz89Kb436tuY+6l95fY33/Udfdq/frRl8rcu0ayxrzT1G/z4z1uQAAnL/DAnxUQK/zhNUKxxVw+3jmZ06OKzTXehWwq3eqeZE1ZwgvtU71V6Du/Tnvwbqf177yO/eUnvfqOe77nH0Z6/uoZ5S+Ou+hPf19PQAAzt+hAT7HPXAmnFYQ3grZvX8rnKa/r79nXvejsR6SI9etPxZb+8x4hfLMrXBe9upbet/WnP5M5z7Tu3efAACcp0MDfK9VqK16gvEM6OmrQJqx9E/1B2BKffZu9fVrlPT2fc8AP9eNGs+8qvW97dXrOXTpnc+n9Gc655U5BwCA83V4gK+gPgP7PI8E3Xrb3UP0R9LXQ3mF597Tx/41wM997pnrzHrtq79lr7G9AN/XnHMBAPh5Dg/wCZypz89fEox7OI2c19vq1P82sCZg95Cd48ztPSXr/kuAr2Ddx0tqvZ51s/+9evRr57yvnWe0dR81nvP5OQ8AAD/L4QE+Ejpn8Kw326knpEaF5lIBt8zg3fW+Cr5bfdnfXCe9fd+Z3/eSsb5+rT3rmfdePfr91j77tWssKvD38T4/5jMDAOC8fWmA35PQmTDaaxXge423EtJ9NgMAQDk8wNfb6FkX4D+WPz6xNQYAwM/06QD/nvrMY+sNsgD/1vw8RngHAGA6NMADAABfS4AHAICFCPAAALAQAR4AABYiwAMAwEIEeAAAWIgADwAACxHgAQBgIQI8AAAsRIAHAICFCPAAALAQAR4AABYiwAMAwELeBHgAAOD7E+ABAGAZl6ff8QGjOfdU9OsAAAAASUVORK5CYII=" InformativeScreenshot="4a6b8eb1a91d1614006c22b8a853214e.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="578,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Message sent&quot;]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="578,97" sap2010:WorkflowViewState.IdRef="WriteLine_1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="[in_ApplicationPath]" InformativeScreenshot="70907f8bc46beed3320a68f648205a45.png" Selector="&lt;wnd app='applicationframehost.exe' appid='5319275A.WhatsAppDesktop_cv1g1gvanyjgm!App' title='WhatsApp' /&gt;" Title="WhatsApp" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
